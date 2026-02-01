@@ -1,12 +1,21 @@
 <!doctype html>
 <html>
   <head>
-    <title>Test title</title>
+    <title>Trịnh Ngọc Các</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <p>
-      Just testing GitHub Pages lol.
-      Here's a <a href="https://google.com">link</a>
-    </p>
+    <div id="navbar"></div>
+
+    <script>
+      fetch("https://raw.githubusercontent.com/Ngoc-Cac/Ngoc-Cac.github.io/refs/heads/main/navbar.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("navbar").innerHTML = html;
+
+          const home = document.querySelector('a[href="index.html"]');
+          home.style.pointerEvents = "none";
+        });
+    </script>
   </body>
 </html>
