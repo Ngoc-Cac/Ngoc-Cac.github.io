@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <div class="content">
+      <h1>Hi, my name is Trịnh Ngọc Các</h1>
+      <div style="display: flex; margin-top: 0px;">
+        <div style="max-width: 990px; margin-right: 15px;">
+          <p>
+          Hi, I'm Ngọc Các. You can refer to me as Các (<img
+            src="assets/logos/volume/volume-white.png"
+            onclick="play_audio('assets/audio/name-pronunciation.mp3')"
+            style="cursor: pointer; width: 18px; vertical-align: middle;"
+          > Kag), or Mike.<br> I studied Data Science at the University of Economics Ho Chi Minh City (UEH),
+          and a Researcher at <a href="https://www.aai-labs.com/en/home">AAI Labs</a> - a
+          Lithuanian tech solutions company.
+          </p>
+          <p>
+          My focus is the on research of practical AI applications. For me, AI research isn't
+          just about producing intelligent machines, but about uncovering how we interpret and
+          act upon raw information in everyday life.
+          </p>
+          <p>
+          I take interest in fields like <a href="https://en.wikipedia.org/wiki/Computer_vision">Computer Vision</a>
+          (object detection and motion estimation) and <a href="https://en.wikipedia.org/wiki/Computer_audition">Computer Audition</a>
+          (audio analysis and music information retrieval). However, my experience in these fields
+          is limited, so I am always looking for opportunities to join relevant projects.
+          </p>
+        </div>
+        <div>
+          <h3>💻 My Tech Stack</h3>
+          <p><b>Languages</b>: Python, Lua, Bash, very basic C#</p>
+          <p>
+            <b>Main Libaries</b>: <a href="https://numpy.org/">NumPy</a>,
+            <a href="https://pandas.pydata.org/">Pandas</a>,
+            <a href="https://scikit-learn.org/stable/">Scikit-learn</a>,
+            <a href="https://opencv.org/">OpenCV</a>
+          </p>
+          <p>
+            <b>Main Frameworks</b>: <a href="https://pytorch.org/">PyTorch</a>,
+            <a href="https://docs.pytest.org/en/stable/"><code>pytest</code></a>,
+            <a href="https://docs.ultralytics.com/">Ultralytics YOLO</a>
+          </p>
+          <p>I use <a href="https://neovim.io/">Neovim</a>, btw</p>
+        </div>
+      </div>
+      <h1>My Projects</h1>
+      <div>
+      </div>
+    </div>
+
+    <script>
+      fetch("https://raw.githubusercontent.com/Ngoc-Cac/Ngoc-Cac.github.io/refs/heads/main/navbar.html")
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("navbar").innerHTML = html;
+
+          document.querySelectorAll(".nav-button").forEach(link => {
+            if (link.getAttribute("href") === "about.html") {
+              link.classList.add("active");
+            }
+          });
+        });
+      document.querySelectorAll(".content a").forEach(link => {
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+      });
+      function play_audio(audioPath) {
+        const audio = new Audio(audioPath);
+        audio.play();
+      }
+    </script>
+  </body>
+</html>
