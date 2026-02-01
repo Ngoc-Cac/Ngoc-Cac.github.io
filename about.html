@@ -54,18 +54,9 @@
       </div>
     </div>
 
+    <script src="js/tab-bar-loader.js"></script>
     <script>
-      fetch("https://raw.githubusercontent.com/Ngoc-Cac/Ngoc-Cac.github.io/refs/heads/main/navbar.html")
-        .then(res => res.text())
-        .then(html => {
-          document.getElementById("navbar").innerHTML = html;
-
-          document.querySelectorAll(".nav-button").forEach(link => {
-            if (link.getAttribute("href") === "about.html") {
-              link.classList.add("active");
-            }
-          });
-        });
+      load_tab_bar("about.html");
       document.querySelectorAll(".content a").forEach(link => {
         link.target = "_blank";
         link.rel = "noopener noreferrer";

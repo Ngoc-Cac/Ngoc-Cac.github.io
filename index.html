@@ -7,15 +7,9 @@
   <body>
     <div id="navbar"></div>
 
+    <script src="js/tab-bar-loader.js"></script>
     <script>
-      fetch("https://raw.githubusercontent.com/Ngoc-Cac/Ngoc-Cac.github.io/refs/heads/main/navbar.html")
-        .then(res => res.text())
-        .then(html => {
-          document.getElementById("navbar").innerHTML = html;
-
-          const home = document.querySelector('a[href="index.html"]');
-          home.style.pointerEvents = "none";
-        });
+      load_tab_bar("index.html");
     </script>
   </body>
 </html>
