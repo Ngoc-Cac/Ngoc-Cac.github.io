@@ -1,6 +1,6 @@
 body {
-  background-color: #343434;
-  color: white;
+  background-color: #171421;
+  color: #DEDEDE;
 }
 
 a {
@@ -17,19 +17,20 @@ a {
 
 .nav-button {
   display: inline-block;
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin: 5px;
-  background-color: #7d5aff;
+  padding: 12px 20px;
+  border-radius: 4px;
+  margin: 2px;
+  background-color: #00a2cc;
   color: white;
   text-decoration: none;
 }
 
 .nav-button:hover {
-  background-color: #553bba;
+  background-color: #004D61;
+  transform: scale(1.02);
 }
 .nav-button.active {
-  background-color: #553bba;
+  background-color: #00657f;
   pointer-events: none;
 }
 
