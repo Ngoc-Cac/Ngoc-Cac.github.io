@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+    <base href="/">
     <title>About Me</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -56,7 +57,7 @@
 
     <script src="js/tab-bar-loader.js"></script>
     <script>
-      load_tab_bar("about.html");
+      load_tab_bar("/about/");
       document.querySelectorAll(".content a").forEach(link => {
         link.target = "_blank";
         link.rel = "noopener noreferrer";

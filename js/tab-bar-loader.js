@@ -1,7 +1,5 @@
-const nav_bar_template = "https://raw.githubusercontent.com/Ngoc-Cac/Ngoc-Cac.github.io/refs/heads/main/navbar.html";
-
 function load_tab_bar(current_page) {
-  fetch(nav_bar_template)
+  fetch("/navbar.html")
     .then(res => res.text())
     .then(html => { document.getElementById("navbar").innerHTML = html; })
     .then(() => {
