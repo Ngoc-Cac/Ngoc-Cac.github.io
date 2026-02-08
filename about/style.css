@@ -1,0 +1,13 @@
+.content {
+  overflow-y: auto;
+  margin-top: 0px;
+  margin-left: 10px;
+  animation: fadeIn 0.4s;
+}
+.content h1 {
+  text-align: center;
+  margin: 15px;
+}
+.content p {
+  font-size: 1.12rem;
+}
