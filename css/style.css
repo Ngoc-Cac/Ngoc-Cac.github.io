@@ -23,6 +23,12 @@ a {
   animation: fadeIn 0.3s;
 }
 
+.tab-bar h1 {
+  /* font-family: 'Times New Roman'; */
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
 .nav-button {
   display: inline-block;
   padding: 12px 20px;
