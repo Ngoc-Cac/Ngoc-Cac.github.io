@@ -28,11 +28,54 @@
         <a href="/assets/resume.pdf" class="nav-button">My Resume</a>
         <a href="/projects/" class="nav-button">Check out my projects</a>
       </div>
+      <h1 style="text-align: center;">My Primary Tech Stack</h1>
+      <table class="tech-stack">
+        <tr>
+          <td><a href="https://git-scm.com/"><img
+            src="/assets/logos/git/white-orange.png"
+            width=200
+            ></a></td>
+          <td><a href="https://www.gnu.org/software/bash/"><img
+            src="/assets/logos/bash/full_colored_dark.png"
+            width=100
+            ></a></td>
+          <td><a href="https://www.docker.com/"><img
+            src="/assets/logos/docker/logo-blue.png"
+            width=250
+          ></a></td>
+          <td><a href="https://neovim.io/"><img
+            src="/assets/logos/neovim/neovim-mark.png"
+            width=100
+          ></a></td>
+          <td><a href="https://jupyter.org/"><img
+            src="/assets/logos/jupyter/orange-grey-mark.png"
+            width=100
+          ></a></td>
+        </tr>
+        <tr>
+          <td><a href="https://www.python.org/"><img
+            src="/assets/logos/python/full.png"
+            width=240
+          ></a></td>
+          <td><a href="https://www.lua.org/"><img
+            src="/assets/logos/lua/128x128.png"
+            width=120
+          ></a></td>
+          <td><a href="https://www.latex-project.org/"><img
+            src="/assets/logos/latex/288x288.svg"
+            width=120
+          ></a></td>
+        </tr>
+      </table>
     </div>
 
     <script src="js/tab-bar-loader.js"></script>
     <script>
       load_tab_bar("/");
+      document.querySelectorAll("table.tech-stack a").forEach(link => {
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+      });
     </script>
   </body>
 </html>
