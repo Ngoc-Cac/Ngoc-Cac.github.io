@@ -58,10 +58,12 @@
         </div>
       </div>
     </div>
+    <div id="footer-placeholder"></div>
 
     <script src="js/tab-bar-loader.js"></script>
     <script>
       load_tab_bar("/about/");
+      load_footer();
       document.querySelectorAll(".content a").forEach(link => {
         link.target = "_blank";
         link.rel = "noopener noreferrer";

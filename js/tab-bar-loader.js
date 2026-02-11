@@ -14,3 +14,11 @@ function load_tab_bar(current_page) {
       });
     });
 }
+
+function load_footer() {
+  fetch("/footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer-placeholder").innerHTML = html;
+    })
+} 

@@ -68,10 +68,12 @@
         </table>
       </div>
     </div>
+    <div id="footer-placeholder"></div>
 
     <script src="js/tab-bar-loader.js"></script>
     <script>
       load_tab_bar("/");
+      load_footer();
       document.querySelectorAll("table.tech-stack a").forEach(link => {
         link.target = "_blank";
         link.rel = "noopener noreferrer";
