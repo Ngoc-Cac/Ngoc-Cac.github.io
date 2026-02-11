@@ -17,6 +17,9 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-color: var(--bg_color);
   color: var(--white);
   font-family: 'Verdana';
@@ -40,6 +43,7 @@ p {
   margin-top: 10px;
   margin-left: 15px;
   animation: fadeIn 0.4s;
+  flex: 1;
 }
 
 
