@@ -46,6 +46,18 @@ p {
   flex: 1;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  animation: fadeIn 0.3s;
+  background-color: var(--bg_alt);
+}
+
+.footer > * {
+  margin-left: 10px;
+}
 
 .tab-bar {
   display: flex;
