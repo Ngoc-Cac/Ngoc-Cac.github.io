@@ -3,6 +3,10 @@
   to { opacity: 1; }
 }
 
+* {
+  margin: 0;
+}
+
 :root {
   --bg_color: #171421;
   --white: #DEDEDE;
@@ -23,10 +27,18 @@ a {
   color: var(--blue);
 }
 
+h1 {
+  margin: 0.67em 0;
+}
+
+p {
+  margin: 1em 0;
+}
+
 .content {
   overflow-y: auto;
-  margin-top: 0px;
-  margin-left: 10px;
+  margin-top: 10px;
+  margin-left: 15px;
   animation: fadeIn 0.4s;
 }
 
@@ -35,12 +47,13 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1px;
+  margin: 10px;
   animation: fadeIn 0.3s;
 }
 
 .tab-bar h1 {
   /* font-family: 'Times New Roman'; */
+  margin: 0;
   font-weight: 600;
   font-size: 1.8rem;
 }
