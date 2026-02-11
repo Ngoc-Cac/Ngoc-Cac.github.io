@@ -23,6 +23,13 @@ a {
   color: var(--blue);
 }
 
+.content {
+  overflow-y: auto;
+  margin-top: 0px;
+  margin-left: 10px;
+  animation: fadeIn 0.4s;
+}
+
 
 .tab-bar {
   display: flex;
