@@ -1,9 +1,5 @@
 .intro-container {
   width: 60%;
-  padding-right: calc(var(--bs-gutter-x) * .5);
-  padding-left: calc(var(--bs-gutter-x) * .5);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .nav-butt-extended {
