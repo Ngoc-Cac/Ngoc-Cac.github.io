@@ -1,6 +1,4 @@
 .intro-container {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
   width: 70%;
   padding-right: calc(var(--bs-gutter-x) * .5);
   padding-left: calc(var(--bs-gutter-x) * .5);
@@ -16,4 +14,7 @@
 
 .tech-stack td {
   padding-right: 50px;
+  padding-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
 }
