@@ -29,6 +29,15 @@ body {
   font-size: 15px;
 }
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg_alt);
+  animation: fadeIn 0.3s;
+  padding-left: 10px;
+}
+
 a {
   color: var(--blue);
 }
@@ -49,19 +58,6 @@ p {
   padding-right: calc(var(--bs-gutter-x) * .5);
   padding-left: calc(var(--bs-gutter-x) * .5);
   justify-items: center;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  animation: fadeIn 0.3s;
-  background-color: var(--bg_alt);
-}
-
-.footer > * {
-  margin-left: 10px;
 }
 
 .tab-bar {
