@@ -1,0 +1,61 @@
+<div class="project-window">
+  <div class="project-heading">
+    <a href="https://github.com/Ngoc-Cac/kfc-reviews-with-bigdata">
+      <img src="/assets/projects/kfc-reviews/workflow.png" alt="Our Workflow">
+    </a>
+    <h1><a href="https://github.com/Ngoc-Cac/kfc-reviews-with-bigdata">
+      Application of Big Data Frameworks for Sentiment Analysis of KFC reviews
+    </a></h1>
+  </div>
+  <p>
+  This project applies Big Data technologies to ML workflows, specifically for
+  sentiment analysis of Google Maps reviews across multiple KFC locations in Ho
+  Chi Minh City.
+  </p>
+  <p>
+  Our team managed to orchestrate a distributed data platform that integrated HDFS
+  and Spark to handle crawled reviews from Google Maps. We also developed models
+  for sentiment analysis and performed explorative analysis of the crawled reviews. 
+  </p>
+  <p>
+  <b>Tech Stack</b>: Docker, Apache Hadoop, Apache Spark, Python, Selenium,
+  PySpark, PyTorch, Matplotlib
+  </p>
+  <p>
+  For me, this project was an adventure, because I got to learn a lot of new tools and
+  how they work under the hood. For instance, I spent quite some time working with Docker,
+  where most of the environment setup involved a lot of digging through documentation to have
+  everything working. This was something very different from the usual plug-and-plays workflow
+  that I was used to.
+  </p>
+  <div class="column-preview">
+    <img
+      src="/assets/projects/kfc-reviews/train-report.png"
+      alt="Training Results"
+    >
+    <div>
+      <p>
+      While I was familiar with PyTorch at this point in time, making the model training pipeline
+      comminuicate with the processed data coming from Spark was a new territory for me. The biggest
+      challenge was leveraging everything that PySpark provides (HDFS MapReduce, lazy computation, etc.)
+      while still preserving the efficiency of the trainig pipeline.
+      </p>
+      <p>
+      Regarding the models that have developed, we used a <b>pre-trained PhoBERT</b> to extract features
+      from the tokenized reviews. From there, we used a <b>Logistic Regressor</b> and a basic
+      <b>Multi-layer Perceptron</b> to perform the predictions.
+      </p>
+      <p>
+      We found that both models recognised negative and positive reviews fairly well, with roughly
+      <b>80-90% accuracy</b>. However, performance dropped significantly for "neutral" reviews.
+      This was largely due to our assumption that <b>all 3-star reviews were neutral</b>, which
+      was not the case as they were either mostly positive or mostly critical.
+      </p>
+      <p>
+        You can see a more detailed analysis of the models <a
+          href="https://github.com/Ngoc-Cac/kfc-reviews-with-bigdata/blob/main/sentiment_analysis/model_eval.ipynb"
+        >here</a>.
+      </p>
+    </div>
+  </div>
+</div>
