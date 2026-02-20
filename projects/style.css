@@ -22,8 +22,6 @@
 
 
 .project-heading {
-  display: flex;
-  flex-direction: column;
   text-align: center;
 }
 
@@ -37,8 +35,8 @@
 }
 
 .project-heading a {
-   text-decoration: none;
-   color: var(--white);
+  text-decoration: none;
+  color: var(--white);
 }
 
 
