@@ -13,20 +13,21 @@
   Chi Minh City.
   </p>
   <p>
-  Our team managed to orchestrate a distributed data platform that integrated HDFS
-  and Spark to handle crawled reviews from Google Maps. We also developed models
-  for sentiment analysis and performed explorative analysis of the crawled reviews. 
+  Our group managed to orchestrate a distributed data platform that <b>integrated HDFS</b>
+  <b>and Spark</b> to storing and processing crawled reviews from Google Maps. We also
+  <b>developed models for sentiment analysis</b> and performed <b>exploratory analysis</b>
+  of the crawled reviews.
   </p>
   <p>
   <b>Tech Stack</b>: Docker, Apache Hadoop, Apache Spark, Python, Selenium,
   PySpark, PyTorch, Matplotlib
   </p>
   <p>
-  For me, this project was an adventure, because I got to learn a lot of new tools and
-  how they work under the hood. For instance, I spent quite some time working with Docker,
-  where most of the environment setup involved a lot of digging through documentation to have
-  everything working. This was something very different from the usual plug-and-plays workflow
-  that I was used to.
+  For me, this project was an adventure, because I got to learn several new tools and how some
+  components work under the hood. For instance, I spent quite some time working with Docker, where
+  most of the environment setup involved a lot of digging through documentation to get everything
+  working properly. This was drastically different from the usual plug-and-play workflows that
+  I was used to.
   </p>
   <div class="column-preview">
     <img
@@ -35,21 +36,21 @@
     >
     <div>
       <p>
-      While I was familiar with PyTorch at this point in time, making the model training pipeline
-      comminuicate with the processed data coming from Spark was a new territory for me. The biggest
-      challenge was leveraging everything that PySpark provides (HDFS MapReduce, lazy computation, etc.)
-      while still preserving the efficiency of the trainig pipeline.
+      While I was familiar with PyTorch at that point in time, making the model training pipeline
+      work with the processed data coming from Spark was new territory for me. The biggest challenge
+      was leveraging everything that PySpark provides (distributed operations, lazy computation, etc.)
+      while still preserving the efficiency of the training pipeline.
       </p>
       <p>
-      Regarding the models that have developed, we used a <b>pre-trained PhoBERT</b> to extract features
-      from the tokenized reviews. From there, we used a <b>Logistic Regressor</b> and a basic
-      <b>Multi-layer Perceptron</b> to perform the predictions.
+      Regarding the models we have developed, we used a <b>pre-trained PhoBERT model</b> to extract features
+      from the tokenized reviews. From there, we used a <b>logistic regression classifier</b> and a
+      basic <b>multi-layer perceptron</b> as prediction heads to obtain the sentiment predictions.
       </p>
       <p>
-      We found that both models recognised negative and positive reviews fairly well, with roughly
-      <b>80-90% accuracy</b>. However, performance dropped significantly for "neutral" reviews.
-      This was largely due to our assumption that <b>all 3-star reviews were neutral</b>, which
-      was not the case as they were either mostly positive or mostly critical.
+      We found that both models recognised negative and positive reviews fairly well, achieving
+      an <b>F1 score</b> of around <b>80-90%</b>. However, performance dropped significantly for
+      "neutral" reviews. This was largely due to our assumption that <b>all 3-star reviews were
+      neutral</b>, which was not the case as they were either mostly positive or mostly critical.
       </p>
       <p>
         You can see a more detailed analysis of the models <a
