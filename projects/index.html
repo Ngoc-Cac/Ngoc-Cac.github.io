@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <base href="/">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/projects/style.css">
     <title>Trịnh Ngọc Các</title>
   </head>
   <body>
     <div id="navbar"></div>
-    <div style="display: flex; justify-content: center; align-items: center;">
-      <h1>🚧Under Construction🚧</h1>
+    <div class="content">
+      <div id="kfc-reviews"></div>
+      <div id="maxflow-ga"></div>
     </div>
+    <footer id="footer-placeholder"></footer>
 
     <script src="js/dynamic-loader.js"></script>
     <script>
       load_tab_bar("/projects/");
+      load_footer();
+      load("kfc-reviews", "/projects/kfc.html");
+      load("maxflow-ga", "/projects/maxflow-ga.html");
     </script>
   </body>
 </html>
